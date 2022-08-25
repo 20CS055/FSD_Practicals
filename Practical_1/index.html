@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <style>
+
+:root {
+  --header-background-color: rgb(190, 247, 247);
+  --footer-background-color: rgb(190, 247, 247);
+}
+        nav>ul>li {
+            list-style-type: none;
+        }
+
+        nav>ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            /* overflow-x: scroll; */
+            overflow-y: hidden;
+        }
+
+        nav{
+
+            /* align-items: center; */
+            /* align-content: center; */
+
+        }
+
+        #header {
+            display: flex;
+            padding-left: 10vw;
+            justify-content: space-between;
+            border-radius: 20px;
+            background-color: var(--header-background-color);
+        }
+        .header_color_choice{
+            display: flex;
+            flex-direction: row;
+        }
+        .redC {
+            position: relative;
+
+            background-color: rgb(255, 0, 0);
+        }
+        .blueC {
+            position: relative;
+
+            background-color: rgb(38, 0, 255);
+        }
+        .yellowC {
+            position: relative;
+
+            background-color: rgb(255, 251, 0);
+        }
+        .whiteC {
+            position: relative;
+
+            background-color: rgb(255, 255, 255);
+        }
+        .header_color_choice{
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+        }
+        .m10{
+            padding: 10px;
+            margin: 10px;
+            height: 20px;
+            width: 20px;
+            border: 4px solid;
+            border-color: rgb(94, 86, 75);
+            border-radius: 10px;
+        }
+        #background_color{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: larger;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .header_main{
+            display: flex;
+            flex-direction: column;
+        }
+        .he2{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            
+        }
+        .profile{
+            height: 100px;
+            width: 100px;
+            padding:0px 10px 0px 10px;
+            
+        }
+        .he1{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            font-size: large;
+            font-family: 'Redressed', cursive;
+        }
+        .container_main_row{
+            display: flex;
+            flex-direction: row;
+
+        }
+        .container_main_col{
+            display: flex;
+            flex-direction: column;
+
+        }
+        article,aside{
+            background-color: rgba(255, 255, 255, 0.084);
+    padding: 1%;
+    border-radius: 20px;
+    padding: 2%;
+        }
+        aside{
+            width:30vw;
+            background-color: rgba(196, 228, 255, 0.338);
+            
+        }
+        .footer{
+            background-color: var(--footer-background-color);
+            border-radius: 20px;
+            padding-left: 1vw;
+        }
+        #main_heading{
+            color: rgb(255, 0, 0);
+        }
+        #sub_heading{
+            color:black;
+        }
+        #article{
+            color:  black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <nav>
+        <ul>
+            <li>home</li>
+            <li>about us</li>
+            <li>contact us</li>
+        </ul>
+
+    </nav> -->
+
+    
+    
+
+        <div id="header" class="header">
+            <div class="he1">
+                <h1 id="main_heading">Practical 1</h1>
+            </div>
+            
+            <div class="he2">
+                
+                <div class="header_main">
+                    <div class="header_color_choice">
+                        
+                        <button class="whiteC m10" style="height: 50px; width: 50px;" onclick="header_color_choice_to_white()"> </button>
+                        <button class="redC m10" style="height: 50px; width: 50px;" onclick="header_color_choice_to_red()"> </button>
+                        <button class="blueC m10" style="height: 50px; width: 50px;" onclick="header_color_choice_to_blue()"> </button>
+                        <button class="yellowC m10" style="height: 50px; width: 50px;" onclick="header_color_choice_to_yellow()"> </button>
+                    </div>
+                    <div class="header_color_choice">
+                        <button id="background_color"  onclick="changeBg()">
+                            Dark mode
+                        </button>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img class="profile" src="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png" alt="#" >
+                </div>
+            </div>
+            
+        </div>
+    
+    </div>
+    
+
+
+      <!-- It contains an article -->
+      <div class="container_main_col">
+        <div class="container_main_row">
+        <article id="article">
+            <h2 id="sub_heading">Article heading</h2>
+    
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+    
+            <h3 id="sub_heading2">Subsection</h3>
+    
+            <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
+    
+            <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
+    
+            <h3 id="sub_heading3">Another subsection</h3>
+    
+            <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+    
+            <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
+          </article>
+    
+          <!-- the aside content can also be nested within the main content -->
+          <aside>
+            <h2 id="sub_heading4">Related</h2>
+    
+            <ul>
+              <li><a href="#">Related Posts 1</a></li>
+              <li><a href="#">Related Posts 2</a></li>
+              <li><a href="#">Related Posts 3</a></li>
+              <li><a href="#">Related Posts 4</a></li>
+              <li><a href="#">Related Posts 5</a></li>
+            </ul>
+          </aside>
+        </div>
+<div id="footer" class="footer">
+    <p>©Copyright by 20CS052. All rights reversed.</p>
+</div>
+    </div>
+      
+    
+
+
+
+</body>
+
+</html>
